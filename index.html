@@ -38,6 +38,23 @@ html, body {
 * {
   box-sizing: border-box;
 }
+/* Prevent any child from overflowing horizontally */
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure images never exceed screen width */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: force any absolute element to not exceed width */
+.position-absolute {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 </style></head>
 <body>
 <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
@@ -167,13 +184,13 @@ html, body {
 </div>
 <div class="col-lg-3 col-6 text-center">
 <div class="d-flex justify-content-center align-items-center">
-<h4 class="counter-value display-1 banner-size" data-count="2">300</h4><span class="text-primary display-1 fw-lighter">+</span>
+<h4 class="counter-value display-1 banner-size" data-count="2">300</h4><span class="text-primary display-1 fw-lighter"></span>
 </div>
-<p class="text-capitalize mb-0">Satisfied clients</p>
+<p class="text-capitalize mb-0">Publications</p>
 </div>
 <div class="col-lg-3 col-6 text-center">
 <div class="d-flex justify-content-center align-items-center">
-<h4 class="counter-value display-1 banner-size" data-count="12">500</h4><span class="text-primary display-1 fw-lighter">+</span>
+<h4 class="counter-value display-1 banner-size" data-count="10">500</h4><span class="text-primary display-1 fw-lighter">+</span>
 </div>
 <p class="text-capitalize mb-0">Projects done</p>
 </div>
